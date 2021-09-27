@@ -6,13 +6,15 @@ echo "$x <br>";
 echo "$y <br>";
 
 $suma = $x + $y;
-echo "$suma <br>";
+echo "suma =$suma <br>";
 
 $resta = $x - $y;
-echo "$resta <br>";
+echo "resta= $resta <br>";
 
 $division = $x / $y;
-echo "$division <br>";
+echo "division= $division <br>";
 
 $producto = $x * $y;
-echo "$producto <br>";
+echo "multiplicación= $producto <br>";
+
+?>
