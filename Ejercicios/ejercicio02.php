@@ -1,8 +1,8 @@
 <?php
 
-$nombre = "nombre";
-$direccion="direccion";
-$mail="mail";
+$nombre = "Sergio";
+$direccion="Zaragoza";
+$mail="mail@mail.com";
 
 
 ?>
