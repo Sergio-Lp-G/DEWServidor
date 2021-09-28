@@ -1,9 +1,10 @@
 <?php
-$anterior=0;
-$valor = 1;
+$a=0;
+$b = 1;
 for($i=0;$i<10;$i++){
-    echo $valor."<br>";
-    $valor=$valor+$anterior;
-    $anterior=$valor;
+    $suma=$a+$b;
+    echo $suma."<br>";
+    $a=$b;      
+    $b=$suma;
 }
 
