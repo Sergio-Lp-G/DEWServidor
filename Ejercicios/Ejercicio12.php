@@ -3,7 +3,7 @@ $a = 5;
 $b = 100;
 $c = -3;
 
-echo segundoGrado($a, $b, $c);
+//echo segundoGrado($a, $b, $c);
 
 function segundoGrado($a, $b, $c)
 {
@@ -19,3 +19,7 @@ function segundoGrado($a, $b, $c)
     return $resultados;
     
 }
+foreach (segundoGrado($a, $b, $c) as $posicion => $nombre) {
+    echo  $posicion.": " . $nombre." <br>";
+}
+
