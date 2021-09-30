@@ -1,29 +1,37 @@
 <?php
 $a = 5;
-$b = 0;
+$b = 10;
 $c = 3;
 
-echo segundoGrado($a, $b, $c);
+echo $a." <br>". $b." <br>". $c." <br>";
+
+function discriminante ($a, $b, $c){
+    $discriminante=(pow($b,2))-(4*$a*$c);
+    //echo $discriminante." <br>";
+    return $discriminante;
+}
+discriminante ($a, $b, $c);
 
 function segundoGrado($a, $b, $c)
 {
-    $discriminante=(pow($b,2))-(4*$a*$c);
-    if($discriminante<0){
+    if(discriminante($a, $b, $c)>0){
         $solpos = (-$b + sqrt(pow($b, 2) - (4 * $a * $c))) / (2 * $a);
         $solneg = (-$b - sqrt(pow($b, 2) - (4 * $a * $c))) / (2 * $a);
+        //echo $solpos." <br>".$solneg;
         $resultados = array (
             "x1" => $solpos,
             "x2" => $solneg);
         return $resultados;
     }
     else{
-        $bolean=FALSE;
+        $nosol="FALSE";
+        //echo $nosol." <br>";
         $resultados = array (
-            "x1" => $bolean);
+            "Resultado" => $nosol);
         return $resultados;
         
     }
-    foreach (segundoGrado($a, $b, $c) as $posicion => $nombre) {
-        echo  $posicion.": " . $nombre." <br>";
-    }
+}
+foreach (segundoGrado($a, $b, $c) as $resultados => $nombre) {
+    echo  $resultados.": " . $nombre." <br>";
 }
