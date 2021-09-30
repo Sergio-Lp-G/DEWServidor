@@ -1,12 +1,12 @@
 <?php
 
-define('NUMERO1',7);
+define('NUMERO1',179);
 define('NUMERO2',193);
 
 function primo ($var) {
     $contador=0;
     for($i=0;$i<$var;$i++){
-        if($i%2==0){
+        if($var%$i==0){
             $contador++;
         }
     }

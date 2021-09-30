@@ -1,9 +1,9 @@
 <?php
-$equipo [0]='Gasol';
-$equipo [1]='Toni';
-$equipo [2]='Pepe';
-$equipo [3]='Fran';
-$equipo [4]='Santos';
+$equipo []='Gasol';
+$equipo []='Toni';
+$equipo []='Pepe';
+$equipo []='Fran';
+$equipo []='Santos';
 
 foreach($equipo as $nombre){
     echo "$nombre <br>";
